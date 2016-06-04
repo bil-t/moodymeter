@@ -1,0 +1,40 @@
+<body>
+<style type="text/css">
+    body {
+        background-color: {{ backgroundColor }}
+    }
+</style>
+
+<div class="w3-container w3-center">
+    <header>
+        <h1 class="w3-tangerine w3-jumbo w3-text-light-grey">Moodymeter</h1>
+    </header>
+
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <div id="glad" class="w3-card-16 w3-btn w3-hover-green w3-sand" style="padding:0px; width: 75%">
+                <img src="glad.png" style="width: 100%" alt="Glad">
+                <div class="w3-container w3-center">
+                    <h2 class="w3-lobster">{{getPublishedCount 'gladCount'}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div id="sad" class="w3-card-16 w3-btn w3-hover-yellow w3-sand" style="padding:0px; width: 75%">
+                <img src="sad.png" style="width: 100%" alt="Sad">
+                <div class="w3-container w3-center">
+                    <h2 class="w3-lobster">{{getPublishedCount 'sadCount'}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div id="mad" class="w3-card-16 w3-btn w3-hover-red w3-sand" style="padding:0px; width: 75%">
+                <img src="mad.png" style="width: 100%" alt="Mad">
+                <div class="w3-container w3-center">
+                    <h2 class="w3-lobster" style="padding: 0px">{{getPublishedCount 'madCount'}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
